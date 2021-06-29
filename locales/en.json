@@ -5,5 +5,11 @@
 	"Blockchain": "Blockchain",
 	"Distributed": "Distributed",
 	"Tokens": "Tokens",
-	"Coinbase": "Coinbase"
+	"Coinbase": "Coinbase",
+	"Data": "Data",
+	"Nonce": "Nonce",
+	"Prev": "Prev",
+	"Mine": "Mine",
+	"Distributed Blockchain": "Distributed Blockchain",
+	"Peer": "Peer"
 }
