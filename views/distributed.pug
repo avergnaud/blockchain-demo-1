@@ -8,9 +8,9 @@ block content
         h3 #{__('Peer')} #{peer}
         .row.row-horizon
           - var blocks = []
-          - blocks.push({block: 1, chain: chain, nonce: 11316, previous: '0000000000000000000000000000000000000000000000000000000000000000'})
-          - blocks.push({block: 2, chain: chain, nonce: 35230, previous: '000015783b764259d382017d91a36d206d0600e2cbb3567748f46a33fe9297cf'})
-          - blocks.push({block: 3, chain: chain, nonce: 12937, previous: '000012fa9b916eb9078f8d98a7864e697ae83ed54f5146bd84452cdafd043c19'})
+          - blocks.push({block: 1, chain: chain, nonce: 314736, previous: '0000000000000000000000000000000000000000000000000000000000000000'})
+          - blocks.push({block: 2, chain: chain, nonce: 390, previous: '00000e982f6bf02e2fe0646987326064ea3be5d1da8c2c05dbf672b191ff05f1'})
+          - blocks.push({block: 3, chain: chain, nonce: 12937, previous: '0000b4869a776500739129e373e9bb771a784599cdf18289eea1e3d7e1b17276'})
           - blocks.push({block: 4, chain: chain, nonce: 35990, previous: '0000b9015ce2a08b61216ba5a0778545bf4ddd7ceb7bbd85dd8062b29a9140bf'})
           - blocks.push({block: 5, chain: chain, nonce: 56265, previous: '0000ae8bbc96cf89c68be6e10a865cc47c6c48a9ebec3c6cad729646cefaef83'})
           each block in blocks
@@ -46,6 +46,12 @@ block content
     }
 
     function setup(block, chain) {
+      $("#block1chain1data").val('Contenu du block 1\napprouvé par consensus')
+      $("#block1chain2data").val('Contenu du block 1\napprouvé par consensus')
+      $("#block1chain3data").val('Contenu du block 1\napprouvé par consensus')
+      $("#block2chain1data").val('Contenu du block 2\napprouvé par consensus')
+      $("#block2chain2data").val('Contenu du block 2\napprouvé par consensus')
+      $("#block2chain3data").val('Contenu du block 2\napprouvé par consensus')
       updateHash(block, chain);
       $('#block'+block+'chain'+chain+'mineButton').click(function(e) {
           e.preventDefault();
